@@ -1,0 +1,77 @@
+header {
+  background: yellow;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgb(216, 17, 17);
+  width: 400px;
+  height: 400px;
+}
+
+nav {
+  background: green;
+}
+nav ul {
+  list-style: disc;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  color: rgb(216, 17, 17);
+}
+nav a:hover {
+  text-decoration: none;
+}
+
+.item {
+  border: 2px solid black;
+  padding: 30px;
+}
+
+.con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.con1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.con2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.abcd, .bb, .aa {
+  border: 2px solid;
+  padding: 30px;
+  width: 66.6666666667%;
+}
+
+.aa {
+  border-color: red;
+}
+
+.bb {
+  border-color: green;
+}/*# sourceMappingURL=style.css.map */

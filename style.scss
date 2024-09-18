@@ -1,0 +1,69 @@
+@import 'var';
+.box{
+    display: flex;
+    justify-content: space-between;
+    background: $red;
+    width: $size;
+    height: $size;
+}
+
+nav
+{
+    background: green;
+    ul
+    {
+        list-style: disc;
+
+    }
+    li
+    {
+        display: inline;
+
+    }
+    a
+    {
+        color:$red;
+        &:hover
+        {
+            text-decoration: none;
+        }
+    }
+}
+
+.item{
+    border: 2px solid black; padding: 30px;
+}
+
+@mixin flex($jc)
+{
+display: flex;
+justify-content: $jc;
+}
+
+.con{
+    @include flex(start);
+}
+.con1{
+    @include flex(end);
+}
+.con2{
+    @include flex(center);
+}
+
+.abcd
+{
+    border: 2px solid;
+    padding: 30px;
+    width: 200px/300px*100%;
+}
+
+.aa{
+    @extend .abcd;
+    border-color:red;
+}
+
+.bb
+{
+    @extend .abcd;
+    border-color: green;
+}
